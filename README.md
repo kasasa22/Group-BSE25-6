@@ -112,7 +112,7 @@ We welcome contributions! To contribute, follow these steps:
 
 1. **Fork the repository** and clone it to your local machine:
    ```bash
-   git clone https://github.com/yourusername/project-repo.git
+   git clone https://github.com/MartinKalema/Group_BSE25-6.git
    ```
 
 2. **Create a new branch** for your changes:
@@ -139,6 +139,9 @@ We welcome contributions! To contribute, follow these steps:
 - Keep your pull requests focused on a single issue.
 - Use clear commit messages.
 
-Thank you for contributing!
-```
+## Contributors
 
+- **[Kasasa Livingstone Trevor](https://github.com/kasasa22)**
+- **[Kalema martin](https://github.com/MartinKalema)**
+- **[Bahebwa Shidah](https://github.com/bahebwashidah)**
+- **[Tusiime George Trevour](https://github.com/tusiimegeorge)**
