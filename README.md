@@ -151,16 +151,3 @@ We welcome contributions! To contribute, follow these steps:
    ```
 
 6. **Open a pull request** on GitHub and describe your changes.
-
-### Guidelines
-
-- Ensure your changes are well-tested.
-- Keep your pull requests focused on a single issue.
-- Use clear commit messages.
-
-## Contributors
-
-- **[Kasasa Livingstone Trevor](https://github.com/kasasa22)**
-- **[Kalema martin](https://github.com/MartinKalema)**
-- **[Bahebwa Shidah](https://github.com/bahebwashidah)**
-- **[Tusiime George Trevour](https://github.com/tusiimegeorge)**
