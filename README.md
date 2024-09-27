@@ -1,7 +1,6 @@
-# Dental Clinic System 
+# Dental Clinic System
 
 This project is focused on building and managing the backend for a Dental Clinic System, supporting a fully developed frontend. The backend integrates a range of modern technologies to ensure smooth deployment, monitoring, and scalability across different environments.
-
 
 ## Key Technologies
 
@@ -18,15 +17,16 @@ This project is focused on building and managing the backend for a Dental Clinic
 ## Workflow
 
 The project follows a structured development cycle:
+
 - **Branching Strategy**: We maintain two branches—Staging and Production. All new changes are pushed to the Staging branch for testing.
 - **Testing & Monitoring**: The staging environment undergoes extensive testing, including unit, integration, load, and stress tests. Monitoring is also conducted here before pushing changes to production.
 
 By combining CI/CD pipelines, test coverage, and robust container management, the backend ensures that the system scales efficiently, remains secure, and performs optimally under various conditions.
 
-
 ## Installation
 
 ### Prerequisites
+
 - Git
 - Docker
 - Node.js and npm
@@ -35,12 +35,17 @@ By combining CI/CD pipelines, test coverage, and robust container management, th
 - GitHub account
 
 ### Steps
+
 1. **Clone the Repository**
+
    ```bash
    git clone https://github.com/yourusername/project-repo.git
    cd project-repo
 
+   ```
+
 2. **Install Dependencies Navigate to the frontend and backend directories to install the required packages:**
+
    ```bash
    # Install frontend dependencies
         cd frontend
@@ -53,26 +58,36 @@ By combining CI/CD pipelines, test coverage, and robust container management, th
         cd ../backend
         npm install
 
+   ```
 
 3. **Setup Docker Build and run the Docker containers for the frontend and backend applications:**
+
    ```bash
    # Build and start the Docker containers
     docker-compose up --build
 
+   ```
+
 4. **Deploy to Kubernetes (Staging) Deploy the application to your Kubernetes environment:**
+
    ```bash
    # Apply the Kubernetes deployment configuration
     kubectl apply -f k8s/deployment.yaml
 
+   ```
+
 5. **Run Tests Run unit and integration tests to ensure the application works as expected**
+
    ```bash
    # Run tests for the application
    npm test
 
+   ```
+
 6. **Run Tests Run unit and integration tests to ensure the application works as expected**
    ```bash
    npm start
-
+   ```
 
 ## Project Architecture
 
@@ -85,7 +100,6 @@ The project is a full-stack web application with CI/CD implementation that autom
 - **Orchestration**: Kubernetes manages the deployment, scaling, and operation of application containers.
 - **Testing**: Selenium is used for end-to-end testing, while CodeCov checks code coverage.
 - **Monitoring**: Grafana, Prometheus, or Datadog are integrated to monitor application performance and system health.
-
 
 ## Directory Structure
 
@@ -106,16 +120,18 @@ project-repo/
 └── README.md                # Project documentation
 ```
 
+### Contribution Guide
 
-###  Contribution Guide
 We welcome contributions! To contribute, follow these steps:
 
 1. **Fork the repository** and clone it to your local machine:
+
    ```bash
    git clone https://github.com/MartinKalema/Group_BSE25-6.git
    ```
 
 2. **Create a new branch** for your changes:
+
    ```bash
    git checkout -b feature-branch-name
    ```
@@ -123,11 +139,13 @@ We welcome contributions! To contribute, follow these steps:
 3. **Make your changes** and ensure everything works.
 
 4. **Commit your changes** with a meaningful message:
+
    ```bash
    git commit -m "feat: Brief description of your changes"
    ```
 
 5. **Push your changes** to your fork:
+
    ```bash
    git push origin feature-branch-name
    ```
@@ -135,6 +153,7 @@ We welcome contributions! To contribute, follow these steps:
 6. **Open a pull request** on GitHub and describe your changes.
 
 ### Guidelines
+
 - Ensure your changes are well-tested.
 - Keep your pull requests focused on a single issue.
 - Use clear commit messages.
