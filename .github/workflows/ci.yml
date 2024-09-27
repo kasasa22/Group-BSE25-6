@@ -22,12 +22,11 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '16'
+          node-version: '20'
 
       # Install dependencies for both frontend and backend
       - name: Install dependencies for backend
         run: |
-          cd backend
           npm install
 
       - name: Install dependencies for frontend
@@ -43,7 +42,6 @@ jobs:
       # Run backend tests
       - name: Run backend tests
         run: |
-          cd backend
           npm test
 
       # Run frontend tests
@@ -60,7 +58,6 @@ jobs:
       # Build the backend and frontend
       - name: Build backend
         run: |
-          cd backend
           npm run build
 
       - name: Build frontend
@@ -71,7 +68,7 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     needs: build
-    if: github.ref == 'refs/heads/main'
+    if: github.ref == 'refs/heads/staging'
 
     steps:
       # Deploy to production server or hosting service
