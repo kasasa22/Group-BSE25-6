@@ -1,22 +1,25 @@
-Ran all test suites.
-mkalaziddamba@Mkalazis-MacBook-Air Group_BSE25-6 % npm run coverage
-npm error Missing script: "coverage"
-npm error
-npm error To see a list of scripts, run:
-npm error   npm run
-npm error A complete log of this run can be found in: /Users/mkalaziddamba/.npm/_logs/2024-10-03T10_21_50_527Z-debug-0.log
-mkalaziddamba@Mkalazis-MacBook-Air Group_BSE25-6 % git remote -v
-origin  https://github.com/kasasa22/Group_BSE25-6..git (fetch)
-origin  https://github.com/kasasa22/Group_BSE25-6..git (push)
-upstream        https://github.com/MartinKalema/Group_BSE25-6.git (fetch)
-upstream        https://github.com/MartinKalema/Group_BSE25-6.git (push)
-mkalaziddamba@Mkalazis-MacBook-Air Group_BSE25-6 % git push origin
-fatal: The current branch staging has no upstream branch.
-To push the current branch and set the remote as upstream, use
-
-    git push --set-upstream origin staging
-
-To have this happen automatically for branches without a tracking
-upstream, see 'push.autoSetupRemote' in 'git help config'.
-
-mkalaziddamba@Mkalazis-MacBook-Air Group_BSE25-6 % 
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "jest",
+    "test:coverage": "jest --coverage",
+    "coverage:report": "jest --coverage && npx codecov"
+  },
+  "author": "",
+  "license": "ISC",
+  "keywords": [],
+  "description": "",
+  "devDependencies": {
+    "@babel/core": "^7.25.2",
+    "@babel/preset-env": "^7.25.4",
+    "@babel/preset-react": "^7.24.7",
+    "@testing-library/jest-dom": "^6.5.0",
+    "@testing-library/react": "^13.4.0",
+    "babel-jest": "^29.7.0",
+    "codecov": "^3.8.2",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0"
+  }
+}
