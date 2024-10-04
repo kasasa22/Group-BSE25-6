@@ -1,11 +1,27 @@
-import globals from "globals";
-import pluginJs from "@eslint/js";
-import pluginReact from "eslint-plugin-react";
-
+import globals from 'globals';
+import pluginJs from '@eslint/js';
+import pluginReact from 'eslint-plugin-react';
 
 export default [
-  {files: ["**/*.{js,mjs,cjs,jsx}"]},
-  {languageOptions: { globals: globals.browser }},
+  // Apply to all JavaScript and JSX files
+  { files: ['**/*.{js,mjs,cjs,jsx}'] },
+
+  // Include browser globals
+  {
+    languageOptions: {
+      globals: globals.browser,
+      // Uncomment and adjust if needed:
+      // ecmaVersion: 2022,
+      // sourceType: 'module',
+    },
+  },
+
+  // Use recommended JS configurations
   pluginJs.configs.recommended,
+
+  // Use recommended React configurations
   pluginReact.configs.flat.recommended,
+
+  // Uncomment if Node.js environment is needed
+  // {env: {node: true}},
 ];
