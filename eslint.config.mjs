@@ -10,9 +10,9 @@ export default [
   {
     languageOptions: {
       globals: globals.browser,
-      // Uncomment and adjust if needed:
+      globals: globals.node,
       // ecmaVersion: 2022,
-      // sourceType: 'module',
+      sourceType: 'module',
     },
   },
 
