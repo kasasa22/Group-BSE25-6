@@ -5,7 +5,9 @@
   "scripts": {
     "test": "jest",
     "test:coverage": "jest --coverage",
-    "coverage:report": "jest --coverage && npx codecov"
+    "coverage:report": "jest --coverage && npx codecov",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
   },
   "author": "",
   "license": "ISC",
