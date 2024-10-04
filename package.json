@@ -7,7 +7,7 @@
     "test:coverage": "jest --coverage",
     "coverage:report": "jest --coverage && npx codecov",
     "lint": "eslint .",
-    "lint:fix": "eslint . --fix"
+    "lint:fix": "eslint . --fix",
     "start": "node server.js",
     "dev": "nodemon server.js"
   },
