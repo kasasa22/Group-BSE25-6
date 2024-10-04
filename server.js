@@ -1,16 +1,16 @@
-const http = require('http');
+const express = require('express');
+const app = express();
 
-// Create an HTTP server
-const server = http.createServer((req, res) => {
-  // Set the response HTTP header with HTTP status and content type
-  res.writeHead(200, { 'Content-Type': 'text/plain' });
-
-  // Send the response body
-  res.end('Hello, World!\n');
+app.get('/', (req, res) => {
+  res.send('Hello, World!');
 });
 
-// Server listens on port 3000
+app.use((err, req, res, next) => {
+  console.error(err.stack);
+  res.status(500).send('Something broke!');
+});
+
 const PORT = process.env.PORT || 3000;
-server.listen(PORT, () => {
+app.listen(PORT, () => {
   console.log(`Server running at http://localhost:${PORT}/`);
 });
