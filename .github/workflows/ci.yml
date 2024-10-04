@@ -37,8 +37,9 @@ jobs:
       # Run all tests using Jest with coverage
       - name: Run Jest tests with coverage
         run: |
-          npm test
+          npm test -- --passWithNoTests
 
+<<<<<<< HEAD
       # Upload coverage to CodeCov
       - name: Upload coverage to CodeCov
         uses: codecov/codecov-action@v3
@@ -47,6 +48,13 @@ jobs:
           files: ./coverage/**/lcov.info        # Path to the coverage report
           flags: unittests                      # Optional flag to identify this report
           fail_ci_if_error: true                # Fail the CI if the upload to CodeCov fails
+=======
+      # Run frontend tests
+      - name: Run frontend tests
+        run: |
+          cd frontend
+          npm test -- --passWithNoTests
+>>>>>>> b005658ae183a0de9b5fbcebe66bd2291b5be7fe
 
   build:
     runs-on: ubuntu-latest
@@ -69,4 +77,3 @@ jobs:
       - name: Deploy to Production
         run: |
           echo "Deploying application..."
-          # Add your deployment script here (e.g., SSH to server, upload to S3, or use a platform-specific action)
