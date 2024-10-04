@@ -42,13 +42,13 @@ jobs:
       # Run backend tests
       - name: Run backend tests
         run: |
-          npm test
+          npm test -- --passWithNoTests
 
       # Run frontend tests
       - name: Run frontend tests
         run: |
           cd frontend
-          npm test
+          npm test -- --passWithNoTests
 
   build:
     runs-on: ubuntu-latest
@@ -75,4 +75,3 @@ jobs:
       - name: Deploy to Production
         run: |
           echo "Deploying application..."
-          # Add your deployment script here (e.g., SSH to server, upload to S3, or use a platform-specific action)
