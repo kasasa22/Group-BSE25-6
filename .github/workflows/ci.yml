@@ -37,6 +37,7 @@ jobs:
       # Run all tests using Jest with coverage
       - name: Run Jest tests with coverage
         run: |
+          cd tests
           npm test -- --passWithNoTests
 
       # Upload coverage to CodeCov
