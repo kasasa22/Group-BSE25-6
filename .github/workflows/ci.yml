@@ -43,10 +43,10 @@ jobs:
       - name: Upload coverage to CodeCov
         uses: codecov/codecov-action@v3
         with:
-          token: ${{ secrets.CODECOV_TOKEN }} # Set the CodeCov token in GitHub Secrets
-          files: ./coverage/**/lcov.info # Path to the coverage report
-          flags: unittests # Optional flag to identify this report
-          fail_ci_if_error: true # Fail the CI if the upload to CodeCov fails
+          token: ${{ secrets.CODECOV_TOKEN }}  # Set the CodeCov token in GitHub Secrets
+          files: ./coverage/**/lcov.info        # Path to the coverage report
+          flags: unittests                      # Optional flag to identify this report
+          fail_ci_if_error: true                # Fail the CI if the upload to CodeCov fails
 
   build:
     runs-on: ubuntu-latest
