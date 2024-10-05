@@ -37,6 +37,7 @@ jobs:
       # Run all tests using Jest with coverage
       - name: Run Jest tests with coverage
         run: |
+          cd tests
           npm test -- --passWithNoTests
 
       # Upload coverage to CodeCov
@@ -69,3 +70,4 @@ jobs:
       - name: Deploy to Production
         run: |
           echo "Deploying application..."
+          # Add your deployment script here (e.g., SSH to server, upload to S3, or use a platform-specific action)
